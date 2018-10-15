@@ -2,30 +2,63 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<!doctype html>
+<html>
+
+<head>
+    <title>SLULU</title>
+    <link rel="stylesheet" type="text/css">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'>
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<div class="info">
+    <h1> Need Help!</h1>
+    <p class="message1">Just Sign Up and Explore the campus for assistance.</p>
+</div>
+<div>
+    <a class="btn btn-medium" href=@Url.Action("Register","Account")>
+        Sign Up!
+    </a>
+</div>
+<div class="slides">
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="https://png2.kisspng.com/20180327/yvq/kisspng-sat-student-graduate-university-college-study-skil-students-5ab9d90254c7a2.5175713015221291543473.png">
+        <img class="mySlides" src="https://images.pond5.com/female-lecturer-teaching-classmates-computer-footage-010897293_prevstill.jpeg">
+        <img class="mySlides" src="https://media.gettyimages.com/photos/college-students-helping-out-in-a-food-drive-picture-id595070455">
+    </section>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+   
+    function myfunction1() {
+        window.location = "http://localhost:64900/Account/Login";
+    }
+</script>
+
+
+
+</body>
+
+</html>
