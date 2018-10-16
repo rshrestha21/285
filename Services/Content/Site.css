@@ -1,5 +1,5 @@
 ﻿.navbar {
-    background-color: darkmagenta !important;
+    background-color: skyblue !important;
 }
 .mySlides{
     width: 700px;
@@ -14,7 +14,8 @@ body {
 h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
-    text-align:center;
+    text-align:left;
+    margin-left: 500px;
 
 }
 h1{
@@ -33,17 +34,17 @@ div.info{
     padding: 10px, 20px;
     margin-top:50px;
 }
-.btn{
-    display:table;
-    text-align:center;
-    text-decoration:none;
+.btn {
+    display: table;
+    text-align: center;
+    text-decoration: none;
     letter-spacing: .02em;
     font-weight: 700;
-    color:#ecf0f1;
-    background-color: darkmagenta;
-    border-radius:.24em;
-    margin-bottom:1em;
-    margin-left:500px;
+    color: #ecf0f1;
+    background-color: skyblue;
+    border-radius: .24em;
+    margin-bottom: 1em;
+    margin-left: 428px;
 }
 .btn-medium{
     font-size:1em;

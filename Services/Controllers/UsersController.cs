@@ -78,7 +78,7 @@ namespace Services.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FName,LName,Username,Password,Gender,Address,Phonenumber,DateofBirth")] User user)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Username,Password,Gender,Address,Phonenumber,DateofBirth")] User user)
         {
             if (ModelState.IsValid)
             {

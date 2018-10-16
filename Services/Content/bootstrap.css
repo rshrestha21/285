@@ -162,7 +162,7 @@ button,
 input,
 select,
 textarea {
-  margin: 0;
+  margin: auto;
   font-family: inherit;
   font-size: 100%;
 }
@@ -856,10 +856,10 @@ pre code {
 .col-lg-10,
 .col-lg-11,
 .col-lg-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+      position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 15px;
 }
 
 .col-xs-1,
@@ -1099,7 +1099,7 @@ pre code {
     width: 8.333333333333332%;
   }
   .col-md-2 {
-    width: 16.666666666666664%;
+      width: 17.666667%;
   }
   .col-md-3 {
     width: 25%;
@@ -1123,7 +1123,7 @@ pre code {
     width: 75%;
   }
   .col-md-10 {
-    width: 83.33333333333334%;
+      width: 104.333333%;
   }
   .col-md-11 {
     width: 91.66666666666666%;
@@ -1717,24 +1717,25 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #555555;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    display: block;
+    width: 30%;
+    height: 37px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: Optima, sans-serif;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-.form-control:focus {
+.form-control:focus 
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -1961,9 +1962,10 @@ textarea.input-lg {
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
-  padding-top: 7px;
-  margin-top: 0;
-  margin-bottom: 0;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: -37px;
+    margin-left: 209px;
 }
 
 .form-horizontal .form-group {
@@ -4506,7 +4508,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: black;
 }
 
 .navbar-inverse .navbar-brand:hover,
